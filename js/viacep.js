@@ -23,7 +23,7 @@ const limparCampos = () =>{
 // arrow para preencher os campos de endereço
 const preencherEndereco = async (evento) => {
     //recebendo value do cep
-    const cep = evento.target.value;
+    const cep = evento.target.value.replace('-', '');
     //limpando campos
     limparCampos();
 
